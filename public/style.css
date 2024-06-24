@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.input-group {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#gamesContainer {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#gameList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#gameList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#gameList li:hover {
+    transform: scale(1.02);
+}
+
+#gameList li.finished {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.finish-btn {
+    background: none;
+    border: none;
+    color: green;
+    cursor: pointer;
+    font-size: 20px;
+}
+Chat container
+.chat-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#chatWindow {
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+#messagesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#messagesList li {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+#nicknameInput, #messageInput {
+    width: calc(60% - 70px);
+    padding: 14px;
+    margin-right: 9px;
+    border: 1px solid #514335d6;
+    border-radius: 10px;
+}
+
+#sendMessageBtn {
+    width: 100px;
+    padding: 0px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendMessageBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Style du chat */
+#chatContainer {
+    background-color: #eff6fb24;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 16px;
+
+  }
+  
+  #messagesList {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  #messagesList .list-group-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 0;
+  }
+  
+  #messagesList .list-group-item:last-child {
+    border-bottom: none;
+  }
+  
+  .input-group.chat-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group.chat-input input {
+    flex: 1;
+  }
+  
+  .input-group.chat-input button {
+    margin-left: 10px;
+  }
+
+  /* En-tête */
+h1, h2 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  /* Zone d'entrée du jeu */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Liste des jeux */
+  #gameList {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  /* Boutons */
+  button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  .finish-btn, .delete-btn {
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .finish-btn {
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .finish-btn:hover {
+    background-color: #218838;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Timer */
+  .timer {
+    margin-right: 10px;
+  }
+  
+  /* Statut du jeu */
+  .status {
+    margin-left: 10px;
+    font-weight: bold;
+  }
